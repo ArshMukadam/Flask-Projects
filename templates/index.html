@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Arsh Mukadam | Portfolio<span></span></h1>
+        <nav>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home-section">
+        <div class="intro-text">
+            <h2>Hi, I'm Mohammad Arsh Mukadam</h2>
+            
+            <p>Welcome to my portfolio—a space built entirely by my own hands using Python (Flask), HTML, and CSS.
+                <br>
+               
+            This isn't just a display of projects; it's a record of my commitment to hands-on development. I live by the principle of writing real code, solving concrete problems, and building purposeful web applications that fundamentally work. You won't find fleeting demos here.
+            
+            <br>
+            This is a dynamic space that evolves and improves with every new line of code I write.</p>
+            <a href="{{ url_for('static', filename='Resume.pdf') }}" class="Resume">Resume</a>
+        </div>
+
+        <div class="intro-photo">
+            <img src="{{ url_for('static', filename='arsh.jpg') }}" alt="Arsh Mukadam">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Arsh Mukadam. All rights reserved.</p>
+    </footer>
+</body>
+</html>

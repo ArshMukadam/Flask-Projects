@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Arsh Mukadam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Arsh Mukadam | Portfolio<span></span></h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <p1>I’m someone who actually enjoys building things in Python and learning new stuff as I go. I’ve worked with Python, Flask, HTML, and CSS, and I focus on writing clean and simple code that makes sense. 
+        <br>I’m still improving every day, exploring new ideas, and trying out different things. My portfolio is basically a collection of what I’ve built while learning, and everything here is created by me from scratch.</p1>
+    </section>
+    <section class="Skills">
+        <p1 class = " text-content">
+            • Skills:
+            <br>
+            <br>
+            • Python: Core Python, OOP, Data Structures, Automation.
+            <br>
+            <br>
+            • Flask: Web app development, Routing, Templates.
+            <br>
+            <br>
+            • API Integration: REST APIs, Fetching & Posting Data.
+            <br>
+            <br>
+            • HTML & CSS: Responsive Design, Layouts, Styling.
+            <br>
+            <br>
+            • Git & GitHub: Version control, Branching, Actions.
+        </p1>
+        <div class = "button-container">
+            • Certificates:
+            <br>
+            <br>
+            1. CWH - PYTHON <br>
+            <button><a href="{{ url_for('static', filename='CWH Python.pdf') }}">Here</a></button><br>
+            <br>
+            • Internship:
+            <br><br>
+            1. I STUDIO - INTERNSHIP <br>
+            <button><a href="{{ url_for('static', filename='istudio.pdf') }}">Here</a></button>
+        </div>
+    </section>
+    <br><br>
+    <footer class="Special-footer">
+        <p>© 2025 Arsh Mukadam. All rights reserved.</p>
+    </footer>
+</body>
+</html>

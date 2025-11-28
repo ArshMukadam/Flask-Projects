@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Arsh Mukadam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Arsh Mukadam | Portfolio<span></span></h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p2>A personal portfolio built with Flask to showcase projects, skills, and clean UI design.</p2><br>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <h3>AI Virtual Assistant.</h3>
+                <p2>A Python assistant that answers user queries and performs basic tasks through text.</p2>
+                <a href="https://github.com/ArshMukadam/Python-Projects/blob/a3d058a0df695f3dd7d17fe039716205037424f2/Mini%20AI%20virtual.py" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Weather App</h3>
+                <p2>A simple web app that fetches real-time weather data using a public API.</p2><br><br>
+                <a href="https://github.com/ArshMukadam/Python-Projects/blob/a3d058a0df695f3dd7d17fe039716205037424f2/Mini%20Weather-Forecast%20App.py" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <h3>ATM Simulator.</h3>
+                <p2>A console-based ATM system supporting balance check, withdrawal, and deposit operations.</p2>
+                <a href="https://github.com/ArshMukadam/Python-Projects/blob/a3d058a0df695f3dd7d17fe039716205037424f2/Mini%20ATM%20Simulator.py" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Library Management.</h3>
+                <p2>A Python program to add, search, issue, and manage books in a simple digital library.</p2><br>
+                <a href="https://github.com/ArshMukadam/Python-Projects/blob/a3d058a0df695f3dd7d17fe039716205037424f2/Mini%20Library%20management%20system.py" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <h3>QR-Code Generator.</h3>
+                <p2>A tool that creates QR codes for text and links using Python libraries.</p2>
+                <a href="https://github.com/ArshMukadam/Python-Projects/blob/a3d058a0df695f3dd7d17fe039716205037424f2/Mini%20QR%20Code%20Generator.py" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <footer>
+        <p>© 2025 Arsh Mukadam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
