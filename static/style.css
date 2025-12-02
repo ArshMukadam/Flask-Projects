@@ -189,3 +189,112 @@ footer {
     text-align: center;
     padding: 14px;
 }
+
+/* Mobile ke liye */
+
+/* -------------------- MOBILE VIEW -------------------- */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 8px;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .home-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .intro-text {
+        min-width: 100%;
+        max-width: 100%;
+        font-size: 32px;
+    }
+
+    .intro-text h2 {
+        font-size: 35px;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+    }
+
+    .intro-photo img {
+        width: 260px;
+        height: 330px;
+        margin-top: 20px;
+    }
+
+    .section {
+        padding: 40px 20px;
+        font-size: 18px;
+    }
+
+    .projects {
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .Resume {
+        font-size: 24px;
+        padding: 8px 20px;
+        margin-bottom: 50px;
+    }
+
+    .Skills {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .text-content,
+    .button-container {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .button-container button {
+        font-size: 20px;
+    }
+}
+
+/* --- Very small mobile screens (below 480px) --- */
+@media (max-width: 480px) {
+
+    .intro-text {
+        font-size: 26px;
+    }
+
+    .intro-text h2 {
+        font-size: 30px;
+    }
+
+    .intro-photo img {
+        width: 220px;
+        height: 300px;
+    }
+
+    .Resume {
+        font-size: 20px;
+        padding: 6px 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
